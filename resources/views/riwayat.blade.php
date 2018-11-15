@@ -148,7 +148,7 @@
                             <div class="col-md-7 offset-md-6">
                                 <br><br>
                                 <center><button type="submit" class="btn btn-primary" >
-                                    {{ __('Save') }}
+                                    {{ __('simpan') }}
                                 </button></center>
                                 <br>
                             </div>
