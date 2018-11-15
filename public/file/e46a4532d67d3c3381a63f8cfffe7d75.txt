@@ -1,0 +1,182 @@
+LOGIN 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Login V9</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->  
+    <link rel="icon" type="imalogin/ge/png" href="signin/images/icons/favicon.ico"/>
+<!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="signin/vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="signin/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="signin/fonts/iconic/css/material-design-iconic-font.min.css">
+<!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="signin/vendor/animate/animate.css">
+<!--===============================================================================================-->  
+    <link rel="stylesheet" type="text/css" href="signin/vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="signin/vendor/animsition/css/animsition.min.css">
+<!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="signin/vendor/select2/select2.min.css">
+<!--===============================================================================================-->  
+    <link rel="stylesheet" type="text/css" href="signin/vendor/daterangepicker/daterangepicker.css">
+<!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="signin/css/util.css">
+    <link rel="stylesheet" type="text/css" href="signin/css/main.css">
+<!--===============================================================================================-->
+</head>
+<body>
+
+<div class="container-login100" style="background-image: url('login/images/bg-01.jpg');">
+        <div class="wrap-login100 p-l-55 p-r-55 p-t-80 p-b-30">
+         <form method="POST" action="{{ route('login') }}" aria-label="{{ __('Login') }}">
+                 @csrf
+                <span class="login100-form-title p-b-37">
+                    Sign In
+                </span>
+
+                <div class="wrap-input100 validate-input m-b-20" data-validate="Enter username or email">
+                    <input class="input100" type="email" name="email" id="email"placeholder="username or email">
+                    <span class="focus-input100"></span>
+                </div>
+
+                <div class="wrap-input100 validate-input m-b-25" data-validate = "Enter password">
+                    <input class="input100" type="password" name="password" id="password" placeholder="password">
+                    <span class="focus-input100"></span>
+                </div>
+
+                <div class="container-login100-form-btn">
+                    <button class="login100-form-btn" >
+                        Sign In
+                    </button>
+                </div>
+
+                <div class="text-center p-t-57 p-b-20">
+                    <span class="txt1">
+                        Or login with
+                    </span>
+                </div>
+
+                <div class="flex-c p-b-112">
+                    <a href="#" class="login100-social-item">
+                        <i class="fa fa-facebook-f"></i>
+                    </a>
+
+                    <a href="#" class="login100-social-item">
+                        <img src="signin/images/icons/icon-google.png" alt="GOOGLE">
+                    </a>
+                </div>
+
+                <div class="text-center">
+                    <a href="#" class="txt2 hov1">
+                        Sign Up
+                    </a>
+                </div>
+            </form>
+
+            
+        </div>
+    </div>
+    
+    
+
+    <div id="dropDownSelect1"></div>
+    
+<!--===============================================================================================-->
+    <script src="signin/vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+    <script src="signin/vendor/animsition/js/animsition.min.js"></script>
+<!--===============================================================================================-->
+    <script src="signin/vendor/bootstrap/js/popper.js"></script>
+    <script src="signin/vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+    <script src="signin/vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+    <script src="signin/vendor/daterangepicker/moment.min.js"></script>
+    <script src="signin/vendor/daterangepicker/daterangepicker.js"></script>
+<!--===============================================================================================-->
+    <script src="signin/vendor/countdowntime/countdowntime.js"></script>
+<!--===============================================================================================-->
+    <script src="signin/js/main.js"></script>
+
+</body>
+</html>
+
+
+REGISTER
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Colorlib Templates">
+    <meta name="author" content="Colorlib">
+    <meta name="keywords" content="Colorlib Templates">
+
+    <!-- Title Page-->
+    <title>Au Register Forms by Colorlib</title>
+
+    <!-- Icons font CSS-->
+    <link href="signup/vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
+    <link href="signup/vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
+    <!-- Font special for pages-->
+    <link href="signup/https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+    <!-- Vendor CSS-->
+    <link href="signup/vendor/select2/select2.min.css" rel="stylesheet" media="all">
+    <link href="signup/vendor/datepicker/daterangepicker.css" rel="stylesheet" media="all">
+
+    <!-- Main CSS-->
+    <link href="signup/css/main.css" rel="stylesheet" media="all">
+</head>
+
+<body>
+    <div class="page-wrapper bg-gra-01 p-t-180 p-b-100 font-poppins">
+        <div class="wrapper wrapper--w780">
+            <div class="card card-3">
+                <div class="card-heading"></div>
+                <div class="card-body">
+                    <h2 class="title">Registration Info</h2>
+                    <form method="POST" action="{{ route('register') }}" aria-label="{{ __('Register') }}">
+                        @csrf
+                        <div class="input-group">
+                            <input class="input--style-3" type="text" placeholder="name" name="name" id="name">
+                        </div>
+                        <div class="input-group">
+                            <input class="input--style-3" type="email" placeholder="Email" name="email" id="email">
+                        </div>
+                        <div class="input-group">
+                            <input class="input--style-3" type="password" placeholder="Password your" name="password" id="password">
+                        </div>
+                        <div class="input-group">
+                            <input class="input--style-3" type="password" placeholder="Confirmasi Password" name="password_confirmation" isd="password-confirm">
+                        </div>
+                        <div class="p-t-10">
+                            <button class="btn btn--pill btn--green" type="register">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Jquery JS-->
+    <script src="signup/vendor/jquery/jquery.min.js"></script>
+    <!-- signup/Vendor JS-->
+    <script src="signup/vendor/select2/select2.min.js"></script>
+    <script src="signup/vendor/datepicker/moment.min.js"></script>
+    <script src="signup/vendor/datepicker/daterangepicker.js"></script>
+
+    <!-- Main JS-->
+    <script src="signup/js/global.js"></script>
+
+</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+
+</html>
+<!-- end document-->
